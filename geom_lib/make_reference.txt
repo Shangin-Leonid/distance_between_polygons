@@ -1,0 +1,23 @@
+ ______________________________________________________________________________
+|                      REFERENCE FOR GEOM_LIB MAKEFILE                         |
+|------------------------------------------------------------------------------|
+|                      DISCRIPTIONS OF EACH TARGET:                            |
+|------------------------------------------------------------------------------|
+|                                                                              |
+|   You can write 'make' + ' ' + any of the following commands:                |
+|                                                                              |
+| ~ help              - show this reference file                               |
+| ~ static_lib        - build the $(SLIB_FILE) static geometric library        |
+| ~ print-NAME        - print the value of the variable called NAME            |
+|                                                                              |
+|   Clean commands:                                                            |
+|                                                                              |
+| ~ clean             - delete auxilary directories and files                  |
+| ~ clean_slib        - delete static library file $(SLIB_FILE)                |
+| ~ clean_all         - clean + clean_slib                                     |
+|                                                                              |
+| There are few other targets, which are used like supporting.                 |
+|                                                                              |
+| All makefiles have been written for Linux. Sorry, if you have another OS :-( |
+| I wish you could understand my make-code and then rewrite some parts.        |
+|______________________________________________________________________________]
