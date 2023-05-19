@@ -1,0 +1,30 @@
+ ______________________________________________________________________________
+|                      REFERENCE FOR MAIN MAKEFILE                             |
+|------------------------------------------------------------------------------|
+|                      DISCRIPTIONS OF EACH TARGET:                            |
+|------------------------------------------------------------------------------|
+|                                                                              |
+|   You can write 'make' + ' ' + any of the following commands:                |
+|                                                                              |
+| ~ help              - show this reference file                               |
+| ~ build             - compile the programm (the main executable file)        |
+| ~ run               - run the programm, add                                  |
+|                           " INPUT_FILE=... OUTPUT_FILE=..." (without quotes) |
+|                          to set input and output files                       |
+| ~ build_test        - compile test module in "./AUTO_TESTS"                  |
+| ~ do_test           - run tests. More info in "./AUTO_TESTS/README.md"       |
+| ~ print-NAME        - print the value of the variable called NAME            |
+|                                                                              |
+|   Clean commands. Add "OUTPUT_FILE=..." (without quotes, after command) to   |
+|   set an output file name (if it is not default = "output.txt").             |
+|                                                                              |
+| ~ clean             - clean main directory (all auxilary files)              |
+| ~ clean_all         - clean main directory fully (roll back to origin state) |
+| ~ clean_output_file - delete programm output                                 |
+| ~ total_clean       - clean all project fully (roll back to origin state)    |
+|                                                                              |
+| There are few other targets, which are used like supporting.                 |
+|                                                                              |
+| All makefiles have been written for Linux. Sorry, if you have another OS :-( |
+| I wish you could understand my make-code and then rewrite some parts.        |
+|______________________________________________________________________________]
