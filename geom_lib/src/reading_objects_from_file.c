@@ -6,6 +6,12 @@
 #include "../header/reading_objects_from_file.h"
 
 
+#define POLYGON_OPEN_SIGN '<'
+#define POLYGON_CLOSE_SIGN '>'
+#define POINT_OPEN_SIGN '{'
+#define POINT_SEPARATORY_SIGN ';'
+#define POINT_CLOSE_SIGN '}'
+
 
 extern reading_code_t Read_polygon_from_file(FILE * inp, polygon_t * polygon)
 {
@@ -24,7 +30,7 @@ extern reading_code_t Read_polygon_from_file(FILE * inp, polygon_t * polygon)
     status_of_fscanf = fscanf(inp, " %c", &tmp_c);
     if(status_of_fscanf == EOF)
         return rc_FILE_ENDED_EARLIER_THAN_EXPECTED;
-    else if((status_of_fscanf != 1) || (tmp_c != '<'))
+    else if((status_of_fscanf != 1) || (tmp_c != POLYGON_OPEN_SIGN))
         return rc_INCORRECT_INPUT_DATA;
 
     /* Считываем количество вершин многоугольника */
@@ -59,7 +65,7 @@ extern reading_code_t Read_polygon_from_file(FILE * inp, polygon_t * polygon)
         polygon->vertices = NULL;
         return rc_FILE_ENDED_EARLIER_THAN_EXPECTED;
     }
-    else if((status_of_fscanf != 1) || (tmp_c != '>')){
+    else if((status_of_fscanf != 1) || (tmp_c != POLYGON_CLOSE_SIGN)){
         free(polygon->vertices);
         polygon->vertices = NULL;
         return rc_INCORRECT_INPUT_DATA;
@@ -82,7 +88,7 @@ extern reading_code_t Read_point_from_file(FILE * inp, point_t * p)
     status_of_fscanf = fscanf(inp, " %c", &tmp_c);
     if(status_of_fscanf == EOF)
         return rc_FILE_ENDED_EARLIER_THAN_EXPECTED;
-    else if((status_of_fscanf != 1) || (tmp_c != '{'))
+    else if((status_of_fscanf != 1) || (tmp_c != POINT_OPEN_SIGN))
         return rc_INCORRECT_INPUT_DATA;
 
     /* Считываем первую координату точки  */
@@ -96,7 +102,7 @@ extern reading_code_t Read_point_from_file(FILE * inp, point_t * p)
     status_of_fscanf = fscanf(inp, " %c", &tmp_c);
     if(status_of_fscanf == EOF)
         return rc_FILE_ENDED_EARLIER_THAN_EXPECTED;
-    else if((status_of_fscanf != 1) || (tmp_c != ';'))
+    else if((status_of_fscanf != 1) || (tmp_c != POINT_SEPARATORY_SIGN))
         return rc_INCORRECT_INPUT_DATA;
 
     /* Считываем вторую координату точки  */
@@ -110,7 +116,7 @@ extern reading_code_t Read_point_from_file(FILE * inp, point_t * p)
     status_of_fscanf = fscanf(inp, " %c", &tmp_c);
     if(status_of_fscanf == EOF)
         return rc_FILE_ENDED_EARLIER_THAN_EXPECTED;
-    else if((status_of_fscanf != 1) || (tmp_c != '}'))
+    else if((status_of_fscanf != 1) || (tmp_c != POINT_CLOSE_SIGN))
         return rc_INCORRECT_INPUT_DATA;
 
     return rc_SUCCESFULLY_READ;
