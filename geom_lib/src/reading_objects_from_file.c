@@ -39,6 +39,8 @@ extern reading_code_t Read_polygon_from_file(FILE * inp, polygon_t * polygon)
         return rc_FILE_ENDED_EARLIER_THAN_EXPECTED;
     else if((status_of_fscanf != 1) || (tmp_i <= 0))
         return rc_INCORRECT_INPUT_DATA;
+    else if(tmp_i < 3)
+        return rc_NOT_POLYGON;
 
     /* Запоминаем количество вершин и выделяем память для массива вершин */
     amount_of_vertices = tmp_i;
