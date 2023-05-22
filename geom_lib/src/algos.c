@@ -79,25 +79,9 @@ extern geom_validity_t Is_polygon_valid(polygon_t polygon)
 {
     assert(polygon.size && polygon.vertices && "Polygon is empty");
 
-    // Меньше 4 вершин - особый случай
-    if(polygon.size < 4)
-    {
-        // Точка
-        if(polygon.size == 1)
-            return gv_IS_POINT;
-        // Отрезок (проверяем совпадение концов)
-        if(polygon.size == 2)
-            return gv_IS_SEGMENT;
-
-        // Проверяем вырожденность треугольника (с помощью ориентированной площади)
-        double  x1 = polygon.vertices[1].x - polygon.vertices[0].x ,
-                y1 = polygon.vertices[1].y - polygon.vertices[0].y ,
-                x2 = polygon.vertices[2].x - polygon.vertices[0].x ,
-                y2 = polygon.vertices[2].y - polygon.vertices[0].y ;
-        double S_or = x1*y2 - x2*y1;
-        return (fabs(S_or) < EPS ? gv_DEGENERATE : gv_VALID);
-    }
-
+    // Меньше трёх вершин - считаем, что не многоугольник
+    if(polygon.size < 3)
+        return gv_NOT_POLYGON;
 
     /* Проверка многоугольника ( >= 4 стороны) на самопересечения */
     segment_t tmp_1,
