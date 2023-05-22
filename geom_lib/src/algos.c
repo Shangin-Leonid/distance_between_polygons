@@ -12,14 +12,7 @@
 
 
 /* Макрос скалярного произведения двух направленых отрезков на плоскости */
-#define SCALAR_PRODUCT(p1, p2, q1, q2) ((p2.x - p1.x)*(q2.x - q1.x) + (p2.y - p1.y)*(q2.y - q1.y))
-
-
-/*
-    Функция получает на вход две точки.
-    Возвращает квадрат расстояния между ними.
-*/
-static inline double Calc_squared_dist_bet_points(point_t p1, point_t p2);
+#define SCALAR_PRODUCT(p1, p2, q1, q2) (((p2).x - (p1).x)*((q2).x - (q1).x) + ((p2).y - (p1).y)*((q2).y - (q1).y))
 
 
 
@@ -209,8 +202,3 @@ extern double Calc_dist_bet_polygons(polygon_t pol_1, polygon_t pol_2, geom_vali
 
     return min_dist;
 }
-
-
-
-static inline double Calc_squared_dist_bet_points(point_t p1, point_t p2)
-{ return ((p1.x - p2.x)*(p1.x - p2.x) + (p1.y - p2.y)*(p1.y - p2.y)); }

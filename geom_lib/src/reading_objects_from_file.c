@@ -20,7 +20,6 @@ extern reading_code_t Read_polygon_from_file(FILE * inp, polygon_t * polygon)
     assert((polygon->vertices == NULL) &&
             "Pointer to array of vertices is not empty. Inputing these data to the function is not safeful.");
 
-    reading_code_t status_of_reading = rc_SUCCESFULLY_READ; // Код ошибки прочтения точки
     size_t amount_of_vertices; // Количество вершин многоугольника (его размер)
     int tmp_i, // Буфер для считывания количества вершин и проверки на положительность
         status_of_fscanf; // Код ошибки работы 'fscanf'
@@ -51,7 +50,7 @@ extern reading_code_t Read_polygon_from_file(FILE * inp, polygon_t * polygon)
     /* В цикле считываем все вершины */
     for(size_t i = 0; i < amount_of_vertices; i++)
     {
-        status_of_reading = Read_point_from_file(inp, polygon->vertices + i);
+        reading_code_t status_of_reading = Read_point_from_file(inp, polygon->vertices + i);
         if(status_of_reading != rc_SUCCESFULLY_READ)
         {
             free(polygon->vertices);
