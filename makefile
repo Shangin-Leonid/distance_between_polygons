@@ -64,12 +64,6 @@ run:
 	./$(MAIN).$(EXE_EXT) $(INPUT_FILE) $(OUTPUT_FILE)
 	@echo "\n"
 
-# Запуск программы (исполняемого файла) под valgrind'ом
-run_under_valgrind:
-	@echo "\nRun the programm with '$(INPUT_FILE)' as input. See output in '$(OUTPUT_FILE)'.\n"
-	./$(MAIN).$(EXE_EXT) $(INPUT_FILE) $(OUTPUT_FILE)
-	@echo "\n"
-
 
 # =================================   Clean   ==============================================
 
