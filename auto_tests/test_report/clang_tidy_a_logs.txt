@@ -1,0 +1,1187 @@
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/.././src/polygon_distance.c:1:1: warning: #includes are not sorted properly [llvm-include-order]
+#include <stdlib.h>
+^
+note: this fix will not be applied because it overlaps with another fix
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/.././src/polygon_distance.c:1:1: warning: system include stdlib.h not allowed [llvmlibc-restrict-system-libc-headers]
+#include <stdlib.h>
+^~~~~~~~~~~~~~~~~~~
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/.././src/polygon_distance.c:2:1: warning: system include stdio.h not allowed [llvmlibc-restrict-system-libc-headers]
+#include <stdio.h>
+^~~~~~~~~~~~~~~~~~
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/.././src/polygon_distance.c:26:5: warning: do not use 'else' after 'return' [llvm-else-after-return,readability-else-after-return]
+    else if(argc > 3)
+    ^~~~~~~~~~~~~~~~~
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/.././src/polygon_distance.c:33:5: warning: multiple declarations in a single statement reduces readability [readability-isolate-declaration]
+    FILE *inp = NULL,  // Входной файл
+    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/.././src/polygon_distance.c:35:20: warning: variable 'err' is not initialized [cppcoreguidelines-init-variables]
+    reading_code_t err; // Статус прочтения геометрического объекта из файла
+                   ^
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/.././src/polygon_distance.c:41:30: warning: use 'fopen' mode 'e' to set O_CLOEXEC [android-cloexec-fopen]
+        inp = fopen(argv[1], "r");
+                             ^~~
+                             "re"
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/.././src/polygon_distance.c:56:39: warning: statement should be inside braces [google-readability-braces-around-statements,hicpp-braces-around-statements,readability-braces-around-statements]
+        if(err == rc_SUCCESFULLY_READ)
+                                      ^
+                                       {
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/.././src/polygon_distance.c:58:13: warning: statement should be inside braces [google-readability-braces-around-statements,hicpp-braces-around-statements,readability-braces-around-statements]
+        else
+            ^
+             {
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/.././src/polygon_distance.c:61:9: warning: the value returned by this function should be used [cert-err33-c]
+        fclose(inp);
+        ^~~~~~~~~~~
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/.././src/polygon_distance.c:61:9: note: cast the expression to void to silence this warning
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/.././src/polygon_distance.c:67:27: warning: use 'fopen' mode 'e' to set O_CLOEXEC [android-cloexec-fopen]
+    outp = fopen(argv[2], "w");
+                          ^~~
+                          "we"
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/.././src/polygon_distance.c:73:26: warning: use 'fopen' mode 'e' to set O_CLOEXEC [android-cloexec-fopen]
+    inp = fopen(argv[1], "r");
+                         ^~~
+                         "re"
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/.././src/polygon_distance.c:76:9: warning: the value returned by this function should be used [cert-err33-c]
+        fprintf(outp, "\nSome problems with opening \"%s\".\n", argv[1]);
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/.././src/polygon_distance.c:76:9: note: cast the expression to void to silence this warning
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/.././src/polygon_distance.c:77:9: warning: the value returned by this function should be used [cert-err33-c]
+        fclose(outp);
+        ^~~~~~~~~~~~
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/.././src/polygon_distance.c:77:9: note: cast the expression to void to silence this warning
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/.././src/polygon_distance.c:89:9: warning: the value returned by this function should be used [cert-err33-c]
+        fprintf(outp, "The distance is %.8lf\n", distance);
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/.././src/polygon_distance.c:89:9: note: cast the expression to void to silence this warning
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/.././src/polygon_distance.c:97:5: warning: the value returned by this function should be used [cert-err33-c]
+    fclose(inp);
+    ^~~~~~~~~~~
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/.././src/polygon_distance.c:97:5: note: cast the expression to void to silence this warning
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/.././src/polygon_distance.c:98:5: warning: the value returned by this function should be used [cert-err33-c]
+    fclose(outp);
+    ^~~~~~~~~~~~
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/.././src/polygon_distance.c:98:5: note: cast the expression to void to silence this warning
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/.././src/reading_and_calculating.c:1:1: warning: #includes are not sorted properly [llvm-include-order]
+#include <stdlib.h>
+^
+note: this fix will not be applied because it overlaps with another fix
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/.././src/reading_and_calculating.c:1:1: warning: system include stdlib.h not allowed [llvmlibc-restrict-system-libc-headers]
+#include <stdlib.h>
+^~~~~~~~~~~~~~~~~~~
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/.././src/reading_and_calculating.c:2:1: warning: system include stdio.h not allowed [llvmlibc-restrict-system-libc-headers]
+#include <stdio.h>
+^~~~~~~~~~~~~~~~~~
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/.././src/reading_and_calculating.c:15:5: warning: multiple declarations in a single statement reduces readability [readability-isolate-declaration]
+    polygon_t polygon_1 = {0, NULL},
+    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/.././src/reading_and_calculating.c:22:39: warning: statement should be inside braces [google-readability-braces-around-statements,hicpp-braces-around-statements,readability-braces-around-statements]
+        if(polygon_1.vertices != NULL)
+                                      ^
+                                       {
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/.././src/reading_and_calculating.c:31:39: warning: statement should be inside braces [google-readability-braces-around-statements,hicpp-braces-around-statements,readability-braces-around-statements]
+        if(polygon_2.vertices != NULL)
+                                      ^
+                                       {
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/.././src/reading_and_calculating.c:39:33: warning: statement should be inside braces [google-readability-braces-around-statements,hicpp-braces-around-statements,readability-braces-around-statements]
+    if(gv_err == gv_NOT_POLYGON)
+                                ^
+                                 {
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/.././src/reading_and_calculating.c:51:21: warning: variable 'gv_err' is not initialized [cppcoreguidelines-init-variables]
+    geom_validity_t gv_err;
+                    ^
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/.././src/reading_and_calculating.c:56:31: warning: statement should be inside braces [google-readability-braces-around-statements,hicpp-braces-around-statements,readability-braces-around-statements]
+        if(gv_err == gv_VALID)
+                              ^
+                               {
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/.././src/reading_and_calculating.c:58:9: warning: do not use 'else' after 'return' [llvm-else-after-return,readability-else-after-return]
+        else if(gv_err == gv_HAS_SELF_INTERSECTION)
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/.././src/reading_and_calculating.c:58:52: warning: statement should be inside braces [google-readability-braces-around-statements,hicpp-braces-around-statements,readability-braces-around-statements]
+        else if(gv_err == gv_HAS_SELF_INTERSECTION)
+                                                   ^
+note: this fix will not be applied because it overlaps with another fix
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/.././src/reading_and_calculating.c:60:13: warning: statement should be inside braces [google-readability-braces-around-statements,hicpp-braces-around-statements,readability-braces-around-statements]
+        else
+            ^
+note: this fix will not be applied because it overlaps with another fix
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/../geom_lib/./src/../header/algos.h:40:12: warning: function 'Do_segments_intersect' has a definition with different parameter names [readability-inconsistent-declaration-parameter-name]
+extern int Do_segments_intersect(segment_t seg_1, segment_t seg_2);
+           ^
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/../geom_lib/./src/algos.c:37:12: note: the definition seen here
+extern int Do_segments_intersect(segment_t seg1, segment_t seg2)
+           ^
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/../geom_lib/./src/../header/algos.h:40:12: note: differing parameters are named here: ('seg_1', 'seg_2'), in definition: ('seg1', 'seg2')
+extern int Do_segments_intersect(segment_t seg_1, segment_t seg_2);
+           ^                               ~~~~~            ~~~~~
+                                           seg1             seg2
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/../geom_lib/./src/../header/algos.h:71:15: warning: function 'Calc_dist_bet_polygons' has a definition with different parameter names [readability-inconsistent-declaration-parameter-name]
+extern double Calc_dist_bet_polygons(polygon_t polygon_1, polygon_t polygon_2, geom_validity_t * err);
+              ^
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/../geom_lib/./src/algos.c:150:15: note: the definition seen here
+extern double Calc_dist_bet_polygons(polygon_t pol_1, polygon_t pol_2, geom_validity_t * gv_err)
+              ^
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/../geom_lib/./src/../header/algos.h:71:15: note: differing parameters are named here: ('polygon_1', 'polygon_2'), in definition: ('pol_1', 'pol_2')
+extern double Calc_dist_bet_polygons(polygon_t polygon_1, polygon_t polygon_2, geom_validity_t * err);
+              ^                                ~~~~~~~~~            ~~~~~~~~~
+                                               pol_1                pol_2
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/../geom_lib/./src/algos.c:1:1: warning: #includes are not sorted properly [llvm-include-order]
+#include <stdlib.h>
+^
+note: this fix will not be applied because it overlaps with another fix
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/../geom_lib/./src/algos.c:1:1: warning: system include stdlib.h not allowed [llvmlibc-restrict-system-libc-headers]
+#include <stdlib.h>
+^~~~~~~~~~~~~~~~~~~
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/../geom_lib/./src/algos.c:2:1: warning: system include math.h not allowed [llvmlibc-restrict-system-libc-headers]
+#include <math.h>
+^~~~~~~~~~~~~~~~~
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/../geom_lib/./src/algos.c:3:1: warning: system include stdio.h not allowed [llvmlibc-restrict-system-libc-headers]
+#include <stdio.h>
+^~~~~~~~~~~~~~~~~~
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/../geom_lib/./src/algos.c:5:1: warning: #includes are not sorted properly [llvm-include-order]
+#include <assert.h>
+^
+note: this fix will not be applied because it overlaps with another fix
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/../geom_lib/./src/algos.c:5:1: warning: system include assert.h not allowed [llvmlibc-restrict-system-libc-headers]
+#include <assert.h>
+^~~~~~~~~~~~~~~~~~~
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/../geom_lib/./src/algos.c:19:44: warning: parameter name 'p1' is too short, expected at least 3 characters [readability-identifier-length]
+extern double Calc_dist_bet_points(point_t p1, point_t p2)
+                                           ^
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/../geom_lib/./src/algos.c:19:56: warning: parameter name 'p2' is too short, expected at least 3 characters [readability-identifier-length]
+extern double Calc_dist_bet_points(point_t p1, point_t p2)
+                                                       ^
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/../geom_lib/./src/algos.c:24:49: warning: parameter name 'p' is too short, expected at least 3 characters [readability-identifier-length]
+extern int Does_point_belong_to_segment(point_t p, segment_t seg)
+                                                ^
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/../geom_lib/./src/algos.c:27:5: warning: multiple declarations in a single statement reduces readability [readability-isolate-declaration]
+    double p_p1 = Calc_dist_bet_points(p, seg.p1),
+    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/../geom_lib/./src/algos.c:30:40: warning: statement should be inside braces [google-readability-braces-around-statements,hicpp-braces-around-statements,readability-braces-around-statements]
+    if(p_p1 + p_p2 - p1_p2 < EPS*p1_p2) // fabs ???
+                                       ^
+                                        {
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/../geom_lib/./src/algos.c:43:52: warning: statement should be inside braces [google-readability-braces-around-statements,hicpp-braces-around-statements,readability-braces-around-statements]
+       Does_point_belong_to_segment(seg2.p2, seg1))
+                                                   ^
+                                                    {
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/../geom_lib/./src/algos.c:47:5: warning: multiple declarations in a single statement reduces readability [readability-isolate-declaration]
+    double delta,
+    ^~~~~~~~~~~~~
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/../geom_lib/./src/algos.c:47:12: warning: variable 'delta' is not initialized [cppcoreguidelines-init-variables]
+    double delta,
+           ^
+note: this fix will not be applied because it overlaps with another fix
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/../geom_lib/./src/algos.c:48:12: warning: variable 'delta_x' is not initialized [cppcoreguidelines-init-variables]
+           delta_x,
+           ^
+note: this fix will not be applied because it overlaps with another fix
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/../geom_lib/./src/algos.c:49:12: warning: variable 'delta_y' is not initialized [cppcoreguidelines-init-variables]
+           delta_y;
+           ^
+note: this fix will not be applied because it overlaps with another fix
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/../geom_lib/./src/algos.c:55:26: warning: statement should be inside braces [google-readability-braces-around-statements,hicpp-braces-around-statements,readability-braces-around-statements]
+    if(fabs(delta) < EPS)
+                         ^
+                          {
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/../geom_lib/./src/algos.c:62:13: warning: variable name 'p' is too short, expected at least 3 characters [readability-identifier-length]
+    point_t p = {delta_x / delta, delta_y / delta}; // Искомая точка пересечения
+            ^
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/../geom_lib/./src/algos.c:63:87: warning: statement should be inside braces [google-readability-braces-around-statements,hicpp-braces-around-statements,readability-braces-around-statements]
+    if(Does_point_belong_to_segment(p, seg1) && Does_point_belong_to_segment(p, seg2))
+                                                                                      ^
+                                                                                       {
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/../geom_lib/./src/algos.c:76:25: warning: statement should be inside braces [google-readability-braces-around-statements,hicpp-braces-around-statements,readability-braces-around-statements]
+    if(polygon.size < 3)
+                        ^
+                         {
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/../geom_lib/./src/algos.c:80:5: warning: multiple declarations in a single statement reduces readability [readability-isolate-declaration]
+    segment_t tmp_1,
+    ^~~~~~~~~~~~~~~~
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/../geom_lib/./src/algos.c:85:5: warning: kernel performance could be improved by unrolling this loop with a '#pragma unroll' directive [altera-unroll-loops]
+    for(size_t i = 1; i < polygon.size - 2; ++i)
+    ^
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/../geom_lib/./src/algos.c:89:48: warning: statement should be inside braces [google-readability-braces-around-statements,hicpp-braces-around-statements,readability-braces-around-statements]
+        if(Do_segments_intersect(tmp_1, tmp_2)) /* Проверка пересечения */
+                                               ^
+                                                {
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/../geom_lib/./src/algos.c:97:9: warning: kernel performance could be improved by unrolling this loop with a '#pragma unroll' directive [altera-unroll-loops]
+        for(size_t j = i+2; j < polygon.size - 1; ++j)
+        ^
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/../geom_lib/./src/algos.c:97:29: warning: backward branch (for loop) is ID-dependent due to variable reference to 'j' and may cause performance degradation [altera-id-dependent-backward-branch]
+        for(size_t j = i+2; j < polygon.size - 1; ++j)
+                            ^
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/../geom_lib/./src/algos.c:101:52: warning: statement should be inside braces [google-readability-braces-around-statements,hicpp-braces-around-statements,readability-braces-around-statements]
+            if(Do_segments_intersect(tmp_1, tmp_2))
+                                                   ^
+                                                    {
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/../geom_lib/./src/algos.c:111:55: warning: parameter name 'p' is too short, expected at least 3 characters [readability-identifier-length]
+extern double Calc_dist_bet_point_and_segment(point_t p, segment_t seg)
+                                                      ^
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/../geom_lib/./src/algos.c:113:45: warning: statement should be inside braces [google-readability-braces-around-statements,hicpp-braces-around-statements,readability-braces-around-statements]
+    if(Does_point_belong_to_segment(p, seg))
+                                            ^
+                                             {
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/../geom_lib/./src/algos.c:138:44: warning: statement should be inside braces [google-readability-braces-around-statements,hicpp-braces-around-statements,readability-braces-around-statements]
+    if(Do_segments_intersect(seg_1, seg_2)) // Проверка пересечения отрезков
+                                           ^
+                                            {
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/../geom_lib/./src/algos.c:142:5: warning: multiple declarations in a single statement reduces readability [readability-isolate-declaration]
+    double min_dist_1 = fmin(Calc_dist_bet_point_and_segment(seg_1.p1, seg_2), Calc_dist_bet_point_and_segment(seg_1.p2, seg_2)),
+    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/../geom_lib/./src/algos.c:150:15: warning: function 'Calc_dist_bet_polygons' has cognitive complexity of 31 (threshold 25) [readability-function-cognitive-complexity]
+extern double Calc_dist_bet_polygons(polygon_t pol_1, polygon_t pol_2, geom_validity_t * gv_err)
+              ^
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/../geom_lib/./src/algos.c:152:5: note: +1, including nesting penalty of 0, nesting level increased to 1
+    assert(pol_1.vertices && pol_1.size && "First polygon is empty"); //REMOVE
+    ^
+/usr/include/assert.h:108:26: note: expanded from macro 'assert'
+  ((void) sizeof ((expr) ? 1 : 0), __extension__ ({                     \
+                         ^
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/../geom_lib/./src/algos.c:152:41: note: +1
+    assert(pol_1.vertices && pol_1.size && "First polygon is empty"); //REMOVE
+                                        ^
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/../geom_lib/./src/algos.c:152:5: note: nesting level increased to 1
+    assert(pol_1.vertices && pol_1.size && "First polygon is empty"); //REMOVE
+    ^
+/usr/include/assert.h:108:50: note: expanded from macro 'assert'
+  ((void) sizeof ((expr) ? 1 : 0), __extension__ ({                     \
+                                                 ^
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/../geom_lib/./src/algos.c:152:5: note: +2, including nesting penalty of 1, nesting level increased to 2
+    assert(pol_1.vertices && pol_1.size && "First polygon is empty"); //REMOVE
+    ^
+/usr/include/assert.h:109:7: note: expanded from macro 'assert'
+      if (expr)                                                         \
+      ^
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/../geom_lib/./src/algos.c:152:41: note: +1
+    assert(pol_1.vertices && pol_1.size && "First polygon is empty"); //REMOVE
+                                        ^
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/../geom_lib/./src/algos.c:152:5: note: +1, nesting level increased to 2
+    assert(pol_1.vertices && pol_1.size && "First polygon is empty"); //REMOVE
+    ^
+/usr/include/assert.h:111:7: note: expanded from macro 'assert'
+      else                                                              \
+      ^
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/../geom_lib/./src/algos.c:153:5: note: +1, including nesting penalty of 0, nesting level increased to 1
+    assert(pol_2.vertices && pol_2.size && "Second polygon is empty"); //REMOVE
+    ^
+/usr/include/assert.h:108:26: note: expanded from macro 'assert'
+  ((void) sizeof ((expr) ? 1 : 0), __extension__ ({                     \
+                         ^
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/../geom_lib/./src/algos.c:153:41: note: +1
+    assert(pol_2.vertices && pol_2.size && "Second polygon is empty"); //REMOVE
+                                        ^
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/../geom_lib/./src/algos.c:153:5: note: nesting level increased to 1
+    assert(pol_2.vertices && pol_2.size && "Second polygon is empty"); //REMOVE
+    ^
+/usr/include/assert.h:108:50: note: expanded from macro 'assert'
+  ((void) sizeof ((expr) ? 1 : 0), __extension__ ({                     \
+                                                 ^
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/../geom_lib/./src/algos.c:153:5: note: +2, including nesting penalty of 1, nesting level increased to 2
+    assert(pol_2.vertices && pol_2.size && "Second polygon is empty"); //REMOVE
+    ^
+/usr/include/assert.h:109:7: note: expanded from macro 'assert'
+      if (expr)                                                         \
+      ^
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/../geom_lib/./src/algos.c:153:41: note: +1
+    assert(pol_2.vertices && pol_2.size && "Second polygon is empty"); //REMOVE
+                                        ^
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/../geom_lib/./src/algos.c:153:5: note: +1, nesting level increased to 2
+    assert(pol_2.vertices && pol_2.size && "Second polygon is empty"); //REMOVE
+    ^
+/usr/include/assert.h:111:7: note: expanded from macro 'assert'
+      else                                                              \
+      ^
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/../geom_lib/./src/algos.c:155:5: note: +1, including nesting penalty of 0, nesting level increased to 1
+    if((pol_1.size < 3) || (pol_2.size < 3))
+    ^
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/../geom_lib/./src/algos.c:155:25: note: +1
+    if((pol_1.size < 3) || (pol_2.size < 3))
+                        ^
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/../geom_lib/./src/algos.c:168:5: note: +1, including nesting penalty of 0, nesting level increased to 1
+    for(size_t j = 0; j < pol_2.size - 1; ++j)
+    ^
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/../geom_lib/./src/algos.c:173:9: note: +2, including nesting penalty of 1, nesting level increased to 2
+        if(min_dist < EPS) /* Проверка на пересечение сторон */
+        ^
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/../geom_lib/./src/algos.c:178:5: note: +1, including nesting penalty of 0, nesting level increased to 1
+    for(size_t i = 0; i < pol_1.size - 1; ++i)
+    ^
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/../geom_lib/./src/algos.c:187:9: note: +2, including nesting penalty of 1, nesting level increased to 2
+        if(min_dist < EPS) /* Проверка на пересечение многоугольников */
+        ^
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/../geom_lib/./src/algos.c:191:9: note: +2, including nesting penalty of 1, nesting level increased to 2
+        for(size_t j = 0; j < pol_2.size - 1; ++j)
+        ^
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/../geom_lib/./src/algos.c:196:13: note: +3, including nesting penalty of 2, nesting level increased to 3
+            if(min_dist < EPS) /* Проверка на пересечение многоугольников */
+            ^
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/../geom_lib/./src/algos.c:201:5: note: +1, including nesting penalty of 0, nesting level increased to 1
+    assert((min_dist >= 0.) && "Negative value of distance"); //REMOVE
+    ^
+/usr/include/assert.h:108:26: note: expanded from macro 'assert'
+  ((void) sizeof ((expr) ? 1 : 0), __extension__ ({                     \
+                         ^
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/../geom_lib/./src/algos.c:201:29: note: +1
+    assert((min_dist >= 0.) && "Negative value of distance"); //REMOVE
+                            ^
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/../geom_lib/./src/algos.c:201:5: note: nesting level increased to 1
+    assert((min_dist >= 0.) && "Negative value of distance"); //REMOVE
+    ^
+/usr/include/assert.h:108:50: note: expanded from macro 'assert'
+  ((void) sizeof ((expr) ? 1 : 0), __extension__ ({                     \
+                                                 ^
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/../geom_lib/./src/algos.c:201:5: note: +2, including nesting penalty of 1, nesting level increased to 2
+    assert((min_dist >= 0.) && "Negative value of distance"); //REMOVE
+    ^
+/usr/include/assert.h:109:7: note: expanded from macro 'assert'
+      if (expr)                                                         \
+      ^
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/../geom_lib/./src/algos.c:201:29: note: +1
+    assert((min_dist >= 0.) && "Negative value of distance"); //REMOVE
+                            ^
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/../geom_lib/./src/algos.c:201:5: note: +1, nesting level increased to 2
+    assert((min_dist >= 0.) && "Negative value of distance"); //REMOVE
+    ^
+/usr/include/assert.h:111:7: note: expanded from macro 'assert'
+      else                                                              \
+      ^
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/../geom_lib/./src/algos.c:162:5: warning: multiple declarations in a single statement reduces readability [readability-isolate-declaration]
+    segment_t side_of_pol_1 = {pol_1.vertices[0], pol_1.vertices[pol_1.size - 1]},
+    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/../geom_lib/./src/algos.c:168:5: warning: kernel performance could be improved by unrolling this loop with a '#pragma unroll' directive [altera-unroll-loops]
+    for(size_t j = 0; j < pol_2.size - 1; ++j)
+    ^
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/../geom_lib/./src/algos.c:173:27: warning: statement should be inside braces [google-readability-braces-around-statements,hicpp-braces-around-statements,readability-braces-around-statements]
+        if(min_dist < EPS) /* Проверка на пересечение сторон */
+                          ^
+                           {
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/../geom_lib/./src/algos.c:187:27: warning: statement should be inside braces [google-readability-braces-around-statements,hicpp-braces-around-statements,readability-braces-around-statements]
+        if(min_dist < EPS) /* Проверка на пересечение многоугольников */
+                          ^
+                           {
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/../geom_lib/./src/algos.c:191:9: warning: kernel performance could be improved by unrolling this loop with a '#pragma unroll' directive [altera-unroll-loops]
+        for(size_t j = 0; j < pol_2.size - 1; ++j)
+        ^
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/../geom_lib/./src/algos.c:196:31: warning: statement should be inside braces [google-readability-braces-around-statements,hicpp-braces-around-statements,readability-braces-around-statements]
+            if(min_dist < EPS) /* Проверка на пересечение многоугольников */
+                              ^
+                               {
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/../geom_lib/./src/reading_objects_from_file.c:1:1: warning: #includes are not sorted properly [llvm-include-order]
+#include <stdlib.h>
+^
+note: this fix will not be applied because it overlaps with another fix
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/../geom_lib/./src/reading_objects_from_file.c:1:1: warning: system include stdlib.h not allowed [llvmlibc-restrict-system-libc-headers]
+#include <stdlib.h>
+^~~~~~~~~~~~~~~~~~~
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/../geom_lib/./src/reading_objects_from_file.c:2:1: warning: system include stdio.h not allowed [llvmlibc-restrict-system-libc-headers]
+#include <stdio.h>
+^~~~~~~~~~~~~~~~~~
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/../geom_lib/./src/reading_objects_from_file.c:4:1: warning: #includes are not sorted properly [llvm-include-order]
+#include <assert.h>
+^
+note: this fix will not be applied because it overlaps with another fix
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/../geom_lib/./src/reading_objects_from_file.c:4:1: warning: system include assert.h not allowed [llvmlibc-restrict-system-libc-headers]
+#include <assert.h>
+^~~~~~~~~~~~~~~~~~~
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/../geom_lib/./src/reading_objects_from_file.c:16:23: warning: function 'Read_polygon_from_file' has cognitive complexity of 29 (threshold 25) [readability-function-cognitive-complexity]
+extern reading_code_t Read_polygon_from_file(FILE * inp, polygon_t * polygon)
+                      ^
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/../geom_lib/./src/reading_objects_from_file.c:18:5: note: +1, including nesting penalty of 0, nesting level increased to 1
+    assert(inp &&
+    ^
+/usr/include/assert.h:108:26: note: expanded from macro 'assert'
+  ((void) sizeof ((expr) ? 1 : 0), __extension__ ({                     \
+                         ^
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/../geom_lib/./src/reading_objects_from_file.c:18:16: note: +1
+    assert(inp &&
+               ^
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/../geom_lib/./src/reading_objects_from_file.c:18:5: note: nesting level increased to 1
+    assert(inp &&
+    ^
+/usr/include/assert.h:108:50: note: expanded from macro 'assert'
+  ((void) sizeof ((expr) ? 1 : 0), __extension__ ({                     \
+                                                 ^
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/../geom_lib/./src/reading_objects_from_file.c:18:5: note: +2, including nesting penalty of 1, nesting level increased to 2
+    assert(inp &&
+    ^
+/usr/include/assert.h:109:7: note: expanded from macro 'assert'
+      if (expr)                                                         \
+      ^
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/../geom_lib/./src/reading_objects_from_file.c:18:16: note: +1
+    assert(inp &&
+               ^
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/../geom_lib/./src/reading_objects_from_file.c:18:5: note: +1, nesting level increased to 2
+    assert(inp &&
+    ^
+/usr/include/assert.h:111:7: note: expanded from macro 'assert'
+      else                                                              \
+      ^
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/../geom_lib/./src/reading_objects_from_file.c:20:5: note: +1, including nesting penalty of 0, nesting level increased to 1
+    assert((polygon->vertices == NULL) &&
+    ^
+/usr/include/assert.h:108:26: note: expanded from macro 'assert'
+  ((void) sizeof ((expr) ? 1 : 0), __extension__ ({                     \
+                         ^
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/../geom_lib/./src/reading_objects_from_file.c:20:40: note: +1
+    assert((polygon->vertices == NULL) &&
+                                       ^
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/../geom_lib/./src/reading_objects_from_file.c:20:5: note: nesting level increased to 1
+    assert((polygon->vertices == NULL) &&
+    ^
+/usr/include/assert.h:108:50: note: expanded from macro 'assert'
+  ((void) sizeof ((expr) ? 1 : 0), __extension__ ({                     \
+                                                 ^
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/../geom_lib/./src/reading_objects_from_file.c:20:5: note: +2, including nesting penalty of 1, nesting level increased to 2
+    assert((polygon->vertices == NULL) &&
+    ^
+/usr/include/assert.h:109:7: note: expanded from macro 'assert'
+      if (expr)                                                         \
+      ^
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/../geom_lib/./src/reading_objects_from_file.c:20:40: note: +1
+    assert((polygon->vertices == NULL) &&
+                                       ^
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/../geom_lib/./src/reading_objects_from_file.c:20:5: note: +1, nesting level increased to 2
+    assert((polygon->vertices == NULL) &&
+    ^
+/usr/include/assert.h:111:7: note: expanded from macro 'assert'
+      else                                                              \
+      ^
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/../geom_lib/./src/reading_objects_from_file.c:30:5: note: +1, including nesting penalty of 0, nesting level increased to 1
+    if(status_of_fscanf == EOF)
+    ^
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/../geom_lib/./src/reading_objects_from_file.c:32:10: note: +1, nesting level increased to 1
+    else if((status_of_fscanf != 1) || (tmp_c != POLYGON_OPEN_SIGN))
+         ^
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/../geom_lib/./src/reading_objects_from_file.c:32:37: note: +1
+    else if((status_of_fscanf != 1) || (tmp_c != POLYGON_OPEN_SIGN))
+                                    ^
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/../geom_lib/./src/reading_objects_from_file.c:37:5: note: +1, including nesting penalty of 0, nesting level increased to 1
+    if(status_of_fscanf == EOF)
+    ^
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/../geom_lib/./src/reading_objects_from_file.c:39:10: note: +1, nesting level increased to 1
+    else if((status_of_fscanf != 1) || (tmp_i <= 0))
+         ^
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/../geom_lib/./src/reading_objects_from_file.c:39:37: note: +1
+    else if((status_of_fscanf != 1) || (tmp_i <= 0))
+                                    ^
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/../geom_lib/./src/reading_objects_from_file.c:41:10: note: +1, nesting level increased to 1
+    else if(tmp_i < 3)
+         ^
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/../geom_lib/./src/reading_objects_from_file.c:47:5: note: +1, including nesting penalty of 0, nesting level increased to 1
+    if(polygon->vertices == NULL)
+    ^
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/../geom_lib/./src/reading_objects_from_file.c:51:5: note: +1, including nesting penalty of 0, nesting level increased to 1
+    for(size_t i = 0; i < amount_of_vertices; i++)
+    ^
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/../geom_lib/./src/reading_objects_from_file.c:54:9: note: +2, including nesting penalty of 1, nesting level increased to 2
+        if(status_of_reading != rc_SUCCESFULLY_READ)
+        ^
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/../geom_lib/./src/reading_objects_from_file.c:58:78: note: +3, including nesting penalty of 2, nesting level increased to 3
+            return (status_of_reading == rc_FILE_ENDED_EARLIER_THAN_EXPECTED ? rc_FILE_ENDED_EARLIER_THAN_EXPECTED : rc_INCORRECT_INPUT_DATA);
+                                                                             ^
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/../geom_lib/./src/reading_objects_from_file.c:64:5: note: +1, including nesting penalty of 0, nesting level increased to 1
+    if(status_of_fscanf == EOF){
+    ^
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/../geom_lib/./src/reading_objects_from_file.c:69:10: note: +1, nesting level increased to 1
+    else if((status_of_fscanf != 1) || (tmp_c != POLYGON_CLOSE_SIGN)){
+         ^
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/../geom_lib/./src/reading_objects_from_file.c:69:37: note: +1
+    else if((status_of_fscanf != 1) || (tmp_c != POLYGON_CLOSE_SIGN)){
+                                    ^
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/../geom_lib/./src/reading_objects_from_file.c:23:12: warning: variable 'amount_of_vertices' is not initialized [cppcoreguidelines-init-variables]
+    size_t amount_of_vertices; // Количество вершин многоугольника (его размер)
+           ^
+                              = 0
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/../geom_lib/./src/reading_objects_from_file.c:24:5: warning: multiple declarations in a single statement reduces readability [readability-isolate-declaration]
+    int tmp_i, // Буфер для считывания количества вершин и проверки на положительность
+    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/../geom_lib/./src/reading_objects_from_file.c:24:9: warning: variable 'tmp_i' is not initialized [cppcoreguidelines-init-variables]
+    int tmp_i, // Буфер для считывания количества вершин и проверки на положительность
+        ^
+note: this fix will not be applied because it overlaps with another fix
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/../geom_lib/./src/reading_objects_from_file.c:25:9: warning: variable 'status_of_fscanf' is not initialized [cppcoreguidelines-init-variables]
+        status_of_fscanf; // Код ошибки работы 'fscanf'
+        ^
+note: this fix will not be applied because it overlaps with another fix
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/../geom_lib/./src/reading_objects_from_file.c:26:10: warning: variable 'tmp_c' is not initialized [cppcoreguidelines-init-variables]
+    char tmp_c; // char-буфер
+         ^
+               = 0
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/../geom_lib/./src/reading_objects_from_file.c:29:24: warning: Call to function 'fscanf' is insecure as it does not provide security checks introduced in the C11 standard. Replace with analogous functions that support length arguments or provides boundary checks such as 'fscanf_s' in case of C11 [clang-analyzer-security.insecureAPI.DeprecatedOrUnsafeBufferHandling]
+    status_of_fscanf = fscanf(inp, " %c", &tmp_c);
+                       ^~~~~~
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/../geom_lib/./src/reading_objects_from_file.c:29:24: note: Call to function 'fscanf' is insecure as it does not provide security checks introduced in the C11 standard. Replace with analogous functions that support length arguments or provides boundary checks such as 'fscanf_s' in case of C11
+    status_of_fscanf = fscanf(inp, " %c", &tmp_c);
+                       ^~~~~~
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/../geom_lib/./src/reading_objects_from_file.c:30:32: warning: statement should be inside braces [google-readability-braces-around-statements,hicpp-braces-around-statements,readability-braces-around-statements]
+    if(status_of_fscanf == EOF)
+                               ^
+                                {
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/../geom_lib/./src/reading_objects_from_file.c:32:5: warning: do not use 'else' after 'return' [llvm-else-after-return,readability-else-after-return]
+    else if((status_of_fscanf != 1) || (tmp_c != POLYGON_OPEN_SIGN))
+    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/../geom_lib/./src/reading_objects_from_file.c:32:69: warning: statement should be inside braces [google-readability-braces-around-statements,hicpp-braces-around-statements,readability-braces-around-statements]
+    else if((status_of_fscanf != 1) || (tmp_c != POLYGON_OPEN_SIGN))
+                                                                    ^
+note: this fix will not be applied because it overlaps with another fix
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/../geom_lib/./src/reading_objects_from_file.c:36:24: warning: 'fscanf' used to convert a string to an integer value, but function will not report conversion errors; consider using 'strtol' instead [cert-err34-c]
+    status_of_fscanf = fscanf(inp, " %d", &tmp_i);
+                       ^
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/../geom_lib/./src/reading_objects_from_file.c:36:24: warning: Call to function 'fscanf' is insecure as it does not provide security checks introduced in the C11 standard. Replace with analogous functions that support length arguments or provides boundary checks such as 'fscanf_s' in case of C11 [clang-analyzer-security.insecureAPI.DeprecatedOrUnsafeBufferHandling]
+    status_of_fscanf = fscanf(inp, " %d", &tmp_i);
+                       ^~~~~~
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/../geom_lib/./src/reading_objects_from_file.c:36:24: note: Call to function 'fscanf' is insecure as it does not provide security checks introduced in the C11 standard. Replace with analogous functions that support length arguments or provides boundary checks such as 'fscanf_s' in case of C11
+    status_of_fscanf = fscanf(inp, " %d", &tmp_i);
+                       ^~~~~~
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/../geom_lib/./src/reading_objects_from_file.c:37:32: warning: statement should be inside braces [google-readability-braces-around-statements,hicpp-braces-around-statements,readability-braces-around-statements]
+    if(status_of_fscanf == EOF)
+                               ^
+                                {
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/../geom_lib/./src/reading_objects_from_file.c:39:5: warning: do not use 'else' after 'return' [llvm-else-after-return,readability-else-after-return]
+    else if((status_of_fscanf != 1) || (tmp_i <= 0))
+    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/../geom_lib/./src/reading_objects_from_file.c:39:53: warning: statement should be inside braces [google-readability-braces-around-statements,hicpp-braces-around-statements,readability-braces-around-statements]
+    else if((status_of_fscanf != 1) || (tmp_i <= 0))
+                                                    ^
+note: this fix will not be applied because it overlaps with another fix
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/../geom_lib/./src/reading_objects_from_file.c:41:23: warning: statement should be inside braces [google-readability-braces-around-statements,hicpp-braces-around-statements,readability-braces-around-statements]
+    else if(tmp_i < 3)
+                      ^
+note: this fix will not be applied because it overlaps with another fix
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/../geom_lib/./src/reading_objects_from_file.c:47:34: warning: statement should be inside braces [google-readability-braces-around-statements,hicpp-braces-around-statements,readability-braces-around-statements]
+    if(polygon->vertices == NULL)
+                                 ^
+                                  {
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/../geom_lib/./src/reading_objects_from_file.c:51:5: warning: kernel performance could be improved by unrolling this loop with a '#pragma unroll' directive [altera-unroll-loops]
+    for(size_t i = 0; i < amount_of_vertices; i++)
+    ^
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/../geom_lib/./src/reading_objects_from_file.c:51:23: warning: backward branch (for loop) is ID-dependent due to variable reference to 'amount_of_vertices' and may cause performance degradation [altera-id-dependent-backward-branch]
+    for(size_t i = 0; i < amount_of_vertices; i++)
+                      ^
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/../geom_lib/./src/reading_objects_from_file.c:63:24: warning: Call to function 'fscanf' is insecure as it does not provide security checks introduced in the C11 standard. Replace with analogous functions that support length arguments or provides boundary checks such as 'fscanf_s' in case of C11 [clang-analyzer-security.insecureAPI.DeprecatedOrUnsafeBufferHandling]
+    status_of_fscanf = fscanf(inp, " %c", &tmp_c);
+                       ^~~~~~
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/../geom_lib/./src/reading_objects_from_file.c:63:24: note: Call to function 'fscanf' is insecure as it does not provide security checks introduced in the C11 standard. Replace with analogous functions that support length arguments or provides boundary checks such as 'fscanf_s' in case of C11
+    status_of_fscanf = fscanf(inp, " %c", &tmp_c);
+                       ^~~~~~
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/../geom_lib/./src/reading_objects_from_file.c:69:5: warning: do not use 'else' after 'return' [llvm-else-after-return,readability-else-after-return]
+    else if((status_of_fscanf != 1) || (tmp_c != POLYGON_CLOSE_SIGN)){
+    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/../geom_lib/./src/reading_objects_from_file.c:81:66: warning: parameter name 'p' is too short, expected at least 3 characters [readability-identifier-length]
+extern reading_code_t Read_point_from_file(FILE * inp, point_t * p)
+                                                                 ^
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/../geom_lib/./src/reading_objects_from_file.c:85:9: warning: variable 'status_of_fscanf' is not initialized [cppcoreguidelines-init-variables]
+    int status_of_fscanf;
+        ^
+                         = 0
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/../geom_lib/./src/reading_objects_from_file.c:86:10: warning: variable 'tmp_c' is not initialized [cppcoreguidelines-init-variables]
+    char tmp_c;
+         ^
+               = 0
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/../geom_lib/./src/reading_objects_from_file.c:89:24: warning: Call to function 'fscanf' is insecure as it does not provide security checks introduced in the C11 standard. Replace with analogous functions that support length arguments or provides boundary checks such as 'fscanf_s' in case of C11 [clang-analyzer-security.insecureAPI.DeprecatedOrUnsafeBufferHandling]
+    status_of_fscanf = fscanf(inp, " %c", &tmp_c);
+                       ^~~~~~
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/../geom_lib/./src/reading_objects_from_file.c:89:24: note: Call to function 'fscanf' is insecure as it does not provide security checks introduced in the C11 standard. Replace with analogous functions that support length arguments or provides boundary checks such as 'fscanf_s' in case of C11
+    status_of_fscanf = fscanf(inp, " %c", &tmp_c);
+                       ^~~~~~
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/../geom_lib/./src/reading_objects_from_file.c:90:32: warning: statement should be inside braces [google-readability-braces-around-statements,hicpp-braces-around-statements,readability-braces-around-statements]
+    if(status_of_fscanf == EOF)
+                               ^
+                                {
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/../geom_lib/./src/reading_objects_from_file.c:92:5: warning: do not use 'else' after 'return' [llvm-else-after-return,readability-else-after-return]
+    else if((status_of_fscanf != 1) || (tmp_c != POINT_OPEN_SIGN))
+    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/../geom_lib/./src/reading_objects_from_file.c:92:67: warning: statement should be inside braces [google-readability-braces-around-statements,hicpp-braces-around-statements,readability-braces-around-statements]
+    else if((status_of_fscanf != 1) || (tmp_c != POINT_OPEN_SIGN))
+                                                                  ^
+note: this fix will not be applied because it overlaps with another fix
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/../geom_lib/./src/reading_objects_from_file.c:96:24: warning: 'fscanf' used to convert a string to a floating-point value, but function will not report conversion errors; consider using 'strtod' instead [cert-err34-c]
+    status_of_fscanf = fscanf(inp, " %lf", &(p->x));
+                       ^
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/../geom_lib/./src/reading_objects_from_file.c:96:24: warning: Call to function 'fscanf' is insecure as it does not provide security checks introduced in the C11 standard. Replace with analogous functions that support length arguments or provides boundary checks such as 'fscanf_s' in case of C11 [clang-analyzer-security.insecureAPI.DeprecatedOrUnsafeBufferHandling]
+    status_of_fscanf = fscanf(inp, " %lf", &(p->x));
+                       ^~~~~~
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/../geom_lib/./src/reading_objects_from_file.c:96:24: note: Call to function 'fscanf' is insecure as it does not provide security checks introduced in the C11 standard. Replace with analogous functions that support length arguments or provides boundary checks such as 'fscanf_s' in case of C11
+    status_of_fscanf = fscanf(inp, " %lf", &(p->x));
+                       ^~~~~~
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/../geom_lib/./src/reading_objects_from_file.c:97:32: warning: statement should be inside braces [google-readability-braces-around-statements,hicpp-braces-around-statements,readability-braces-around-statements]
+    if(status_of_fscanf == EOF)
+                               ^
+                                {
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/../geom_lib/./src/reading_objects_from_file.c:99:5: warning: do not use 'else' after 'return' [llvm-else-after-return,readability-else-after-return]
+    else if(status_of_fscanf != 1)
+    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/../geom_lib/./src/reading_objects_from_file.c:99:35: warning: statement should be inside braces [google-readability-braces-around-statements,hicpp-braces-around-statements,readability-braces-around-statements]
+    else if(status_of_fscanf != 1)
+                                  ^
+note: this fix will not be applied because it overlaps with another fix
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/../geom_lib/./src/reading_objects_from_file.c:103:24: warning: Call to function 'fscanf' is insecure as it does not provide security checks introduced in the C11 standard. Replace with analogous functions that support length arguments or provides boundary checks such as 'fscanf_s' in case of C11 [clang-analyzer-security.insecureAPI.DeprecatedOrUnsafeBufferHandling]
+    status_of_fscanf = fscanf(inp, " %c", &tmp_c);
+                       ^~~~~~
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/../geom_lib/./src/reading_objects_from_file.c:103:24: note: Call to function 'fscanf' is insecure as it does not provide security checks introduced in the C11 standard. Replace with analogous functions that support length arguments or provides boundary checks such as 'fscanf_s' in case of C11
+    status_of_fscanf = fscanf(inp, " %c", &tmp_c);
+                       ^~~~~~
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/../geom_lib/./src/reading_objects_from_file.c:104:32: warning: statement should be inside braces [google-readability-braces-around-statements,hicpp-braces-around-statements,readability-braces-around-statements]
+    if(status_of_fscanf == EOF)
+                               ^
+                                {
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/../geom_lib/./src/reading_objects_from_file.c:106:5: warning: do not use 'else' after 'return' [llvm-else-after-return,readability-else-after-return]
+    else if((status_of_fscanf != 1) || (tmp_c != POINT_SEPARATORY_SIGN))
+    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/../geom_lib/./src/reading_objects_from_file.c:106:73: warning: statement should be inside braces [google-readability-braces-around-statements,hicpp-braces-around-statements,readability-braces-around-statements]
+    else if((status_of_fscanf != 1) || (tmp_c != POINT_SEPARATORY_SIGN))
+                                                                        ^
+note: this fix will not be applied because it overlaps with another fix
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/../geom_lib/./src/reading_objects_from_file.c:110:24: warning: 'fscanf' used to convert a string to a floating-point value, but function will not report conversion errors; consider using 'strtod' instead [cert-err34-c]
+    status_of_fscanf = fscanf(inp, " %lf", &(p->y));
+                       ^
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/../geom_lib/./src/reading_objects_from_file.c:110:24: warning: Call to function 'fscanf' is insecure as it does not provide security checks introduced in the C11 standard. Replace with analogous functions that support length arguments or provides boundary checks such as 'fscanf_s' in case of C11 [clang-analyzer-security.insecureAPI.DeprecatedOrUnsafeBufferHandling]
+    status_of_fscanf = fscanf(inp, " %lf", &(p->y));
+                       ^~~~~~
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/../geom_lib/./src/reading_objects_from_file.c:110:24: note: Call to function 'fscanf' is insecure as it does not provide security checks introduced in the C11 standard. Replace with analogous functions that support length arguments or provides boundary checks such as 'fscanf_s' in case of C11
+    status_of_fscanf = fscanf(inp, " %lf", &(p->y));
+                       ^~~~~~
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/../geom_lib/./src/reading_objects_from_file.c:111:32: warning: statement should be inside braces [google-readability-braces-around-statements,hicpp-braces-around-statements,readability-braces-around-statements]
+    if(status_of_fscanf == EOF)
+                               ^
+                                {
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/../geom_lib/./src/reading_objects_from_file.c:113:5: warning: do not use 'else' after 'return' [llvm-else-after-return,readability-else-after-return]
+    else if(status_of_fscanf != 1)
+    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/../geom_lib/./src/reading_objects_from_file.c:113:35: warning: statement should be inside braces [google-readability-braces-around-statements,hicpp-braces-around-statements,readability-braces-around-statements]
+    else if(status_of_fscanf != 1)
+                                  ^
+note: this fix will not be applied because it overlaps with another fix
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/../geom_lib/./src/reading_objects_from_file.c:117:24: warning: Call to function 'fscanf' is insecure as it does not provide security checks introduced in the C11 standard. Replace with analogous functions that support length arguments or provides boundary checks such as 'fscanf_s' in case of C11 [clang-analyzer-security.insecureAPI.DeprecatedOrUnsafeBufferHandling]
+    status_of_fscanf = fscanf(inp, " %c", &tmp_c);
+                       ^~~~~~
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/../geom_lib/./src/reading_objects_from_file.c:117:24: note: Call to function 'fscanf' is insecure as it does not provide security checks introduced in the C11 standard. Replace with analogous functions that support length arguments or provides boundary checks such as 'fscanf_s' in case of C11
+    status_of_fscanf = fscanf(inp, " %c", &tmp_c);
+                       ^~~~~~
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/../geom_lib/./src/reading_objects_from_file.c:118:32: warning: statement should be inside braces [google-readability-braces-around-statements,hicpp-braces-around-statements,readability-braces-around-statements]
+    if(status_of_fscanf == EOF)
+                               ^
+                                {
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/../geom_lib/./src/reading_objects_from_file.c:120:5: warning: do not use 'else' after 'return' [llvm-else-after-return,readability-else-after-return]
+    else if((status_of_fscanf != 1) || (tmp_c != POINT_CLOSE_SIGN))
+    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/../geom_lib/./src/reading_objects_from_file.c:120:68: warning: statement should be inside braces [google-readability-braces-around-statements,hicpp-braces-around-statements,readability-braces-around-statements]
+    else if((status_of_fscanf != 1) || (tmp_c != POINT_CLOSE_SIGN))
+                                                                   ^
+note: this fix will not be applied because it overlaps with another fix
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/../geom_lib/./src/reading_objects_from_file.c:132:9: warning: potential uncovered code path; add a default label [hicpp-multiway-paths-covered]
+        switch(status)
+        ^
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/../geom_lib/./src/reading_objects_from_file.c:163:9: warning: potential uncovered code path; add a default label [hicpp-multiway-paths-covered]
+        switch(status)
+        ^
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/../geom_lib/./src/reading_objects_from_file.c:169:17: warning: the value returned by this function should be used [cert-err33-c]
+                fprintf(outp, "END_OF_FILE!\n");
+                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/../geom_lib/./src/reading_objects_from_file.c:169:17: note: cast the expression to void to silence this warning
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/../geom_lib/./src/reading_objects_from_file.c:172:17: warning: the value returned by this function should be used [cert-err33-c]
+                fprintf(outp, "INCORRECT_INPUT_DATA!\n");
+                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/../geom_lib/./src/reading_objects_from_file.c:172:17: note: cast the expression to void to silence this warning
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/../geom_lib/./src/reading_objects_from_file.c:175:17: warning: the value returned by this function should be used [cert-err33-c]
+                fprintf(outp, "MEMORY_ALLOCATING_ERROR!\n");
+                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/../geom_lib/./src/reading_objects_from_file.c:175:17: note: cast the expression to void to silence this warning
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/../geom_lib/./src/reading_objects_from_file.c:178:17: warning: the value returned by this function should be used [cert-err33-c]
+                fprintf(outp, "FILE_ENDED_EARLIER_THAN_EXPECTED!\n");
+                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/../geom_lib/./src/reading_objects_from_file.c:178:17: note: cast the expression to void to silence this warning
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/../geom_lib/./src/reading_objects_from_file.c:181:17: warning: the value returned by this function should be used [cert-err33-c]
+                fprintf(outp, "ONE OF POLYGONS HAS SELF INTERSECTION!\n");
+                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/../geom_lib/./src/reading_objects_from_file.c:181:17: note: cast the expression to void to silence this warning
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/../geom_lib/./src/reading_objects_from_file.c:184:17: warning: the value returned by this function should be used [cert-err33-c]
+                fprintf(outp, "NOT_POLYGON!\n");
+                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/../geom_lib/./src/reading_objects_from_file.c:184:17: note: cast the expression to void to silence this warning
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/../geom_lib/./src/reading_objects_from_file.c:187:17: warning: the value returned by this function should be used [cert-err33-c]
+                fprintf(outp, "UNIDENTIFIED_ERROR!\n");
+                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/../geom_lib/./src/reading_objects_from_file.c:187:17: note: cast the expression to void to silence this warning
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/./src/check_output_files.c:1:1: warning: #includes are not sorted properly [llvm-include-order]
+#include <stdlib.h>
+^
+note: this fix will not be applied because it overlaps with another fix
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/./src/check_output_files.c:1:1: warning: system include stdlib.h not allowed [llvmlibc-restrict-system-libc-headers]
+#include <stdlib.h>
+^~~~~~~~~~~~~~~~~~~
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/./src/check_output_files.c:2:1: warning: system include stdio.h not allowed [llvmlibc-restrict-system-libc-headers]
+#include <stdio.h>
+^~~~~~~~~~~~~~~~~~
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/./src/check_output_files.c:15:5: warning: function 'main' has cognitive complexity of 55 (threshold 25) [readability-function-cognitive-complexity]
+int main(int argc, char* argv[])
+    ^
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/./src/check_output_files.c:22:5: note: +1, including nesting penalty of 0, nesting level increased to 1
+    if(routp == NULL)
+    ^
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/./src/check_output_files.c:30:5: note: +1, including nesting penalty of 0, nesting level increased to 1
+    if((argc == 1) || (argv == NULL))
+    ^
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/./src/check_output_files.c:30:20: note: +1
+    if((argc == 1) || (argv == NULL))
+                   ^
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/./src/check_output_files.c:39:5: note: +1, including nesting penalty of 0, nesting level increased to 1
+    if(toutp == NULL)
+    ^
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/./src/check_output_files.c:50:5: note: +1, including nesting penalty of 0, nesting level increased to 1
+    for(int i = 1; i < argc; ++i)
+    ^
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/./src/check_output_files.c:61:9: note: +2, including nesting penalty of 1, nesting level increased to 2
+        if(coutp == NULL)
+        ^
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/./src/check_output_files.c:70:9: note: +2, including nesting penalty of 1, nesting level increased to 2
+        if((out_symbol != 'S') && (out_symbol != 'E'))
+        ^
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/./src/check_output_files.c:70:32: note: +1
+        if((out_symbol != 'S') && (out_symbol != 'E'))
+                               ^
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/./src/check_output_files.c:73:13: note: +3, including nesting penalty of 2, nesting level increased to 3
+            if(out_symbol == 'F')
+            ^
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/./src/check_output_files.c:76:13: note: +1, nesting level increased to 3
+            else
+            ^
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/./src/check_output_files.c:89:9: note: +2, including nesting penalty of 1, nesting level increased to 2
+        if((correct_symbol != 'S') && (correct_symbol != 'E'))
+        ^
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/./src/check_output_files.c:89:36: note: +1
+        if((correct_symbol != 'S') && (correct_symbol != 'E'))
+                                   ^
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/./src/check_output_files.c:99:9: note: +2, including nesting penalty of 1, nesting level increased to 2
+        if(out_symbol != correct_symbol)
+        ^
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/./src/check_output_files.c:101:13: note: +3, including nesting penalty of 2, nesting level increased to 3
+            if(out_symbol == 'S')
+            ^
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/./src/check_output_files.c:105:17: note: +4, including nesting penalty of 3, nesting level increased to 4
+                if(correct_symbol == 'E')
+                ^
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/./src/check_output_files.c:108:13: note: +1, nesting level increased to 3
+            else
+            ^
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/./src/check_output_files.c:112:17: note: +4, including nesting penalty of 3, nesting level increased to 4
+                if(out_symbol == 'E')
+                ^
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/./src/check_output_files.c:121:9: note: +2, including nesting penalty of 1, nesting level increased to 2
+        if(out_symbol == 'S')
+        ^
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/./src/check_output_files.c:125:13: note: +3, including nesting penalty of 2, nesting level increased to 3
+            if((status_of_fscanf != 1) || (correct_dist < 0))
+            ^
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/./src/check_output_files.c:125:40: note: +1
+            if((status_of_fscanf != 1) || (correct_dist < 0))
+                                       ^
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/./src/check_output_files.c:133:13: note: +3, including nesting penalty of 2, nesting level increased to 3
+            if(status_of_fscanf != 1)
+            ^
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/./src/check_output_files.c:142:13: note: +3, including nesting penalty of 2, nesting level increased to 3
+            if(dabs(test_dist - correct_dist) <= DELTA*correct_dist)
+            ^
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/./src/check_output_files.c:144:13: note: +1, nesting level increased to 3
+            else
+            ^
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/./src/check_output_files.c:153:14: note: +1, nesting level increased to 2
+        else if(out_symbol == 'E')
+             ^
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/./src/check_output_files.c:157:13: note: +3, including nesting penalty of 2, nesting level increased to 3
+            if(status_of_fscanf != 1)
+            ^
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/./src/check_output_files.c:165:13: note: +3, including nesting penalty of 2, nesting level increased to 3
+            if(status_of_fscanf != 1)
+            ^
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/./src/check_output_files.c:174:13: note: +3, including nesting penalty of 2, nesting level increased to 3
+            if(correct_code == test_code)
+            ^
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/./src/check_output_files.c:176:13: note: +1, nesting level increased to 3
+            else
+            ^
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/./src/check_output_files.c:17:5: warning: multiple declarations in a single statement reduces readability [readability-isolate-declaration]
+    FILE *routp, // Файл с результатами
+    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/./src/check_output_files.c:17:11: warning: variable 'routp' is not initialized [cppcoreguidelines-init-variables]
+    FILE *routp, // Файл с результатами
+          ^
+note: this fix will not be applied because it overlaps with another fix
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/./src/check_output_files.c:18:11: warning: variable 'toutp' is not initialized [cppcoreguidelines-init-variables]
+         *toutp; // Файл с выводом тестов
+          ^
+note: this fix will not be applied because it overlaps with another fix
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/./src/check_output_files.c:21:45: warning: use 'fopen' mode 'e' to set O_CLOEXEC [android-cloexec-fopen]
+    routp = fopen(NAME_OF_TEST_REPORT_FILE, "w");
+                                            ^~~
+                                            "we"
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/./src/check_output_files.c:28:5: warning: the value returned by this function should be used [cert-err33-c]
+    fprintf(routp, "\n\tHere you can see results of testing the programm:\n\n");
+    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/./src/check_output_files.c:28:5: note: cast the expression to void to silence this warning
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/./src/check_output_files.c:33:9: warning: the value returned by this function should be used [cert-err33-c]
+        fprintf(routp, "\n\nChecking function did't get any argument (name of file with correct answer).\n");
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/./src/check_output_files.c:33:9: note: cast the expression to void to silence this warning
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/./src/check_output_files.c:34:9: warning: the value returned by this function should be used [cert-err33-c]
+        fclose(routp);
+        ^~~~~~~~~~~~~
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/./src/check_output_files.c:34:9: note: cast the expression to void to silence this warning
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/./src/check_output_files.c:38:45: warning: use 'fopen' mode 'e' to set O_CLOEXEC [android-cloexec-fopen]
+    toutp = fopen(NAME_OF_TEST_OUTPUT_FILE, "r");
+                                            ^~~
+                                            "re"
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/./src/check_output_files.c:43:9: warning: the value returned by this function should be used [cert-err33-c]
+        fprintf(routp, "\n\nThere is no \"%s\". You should run \"%s\"", NAME_OF_TEST_OUTPUT_FILE, NAME_OF_FILL_IN_PROGRAMM);
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/./src/check_output_files.c:43:9: note: cast the expression to void to silence this warning
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/./src/check_output_files.c:44:9: warning: the value returned by this function should be used [cert-err33-c]
+        fprintf(routp, " before running this checking programm\n");
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/./src/check_output_files.c:44:9: note: cast the expression to void to silence this warning
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/./src/check_output_files.c:45:9: warning: the value returned by this function should be used [cert-err33-c]
+        fclose(routp);
+        ^~~~~~~~~~~~~
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/./src/check_output_files.c:45:9: note: cast the expression to void to silence this warning
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/./src/check_output_files.c:50:5: warning: kernel performance could be improved by unrolling this loop with a '#pragma unroll' directive [altera-unroll-loops]
+    for(int i = 1; i < argc; ++i)
+    ^
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/./src/check_output_files.c:52:9: warning: multiple declarations in a single statement reduces readability [readability-isolate-declaration]
+        char out_symbol = ' ',
+        ^~~~~~~~~~~~~~~~~~~~~~
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/./src/check_output_files.c:54:13: warning: variable 'status_of_fscanf' is not initialized [cppcoreguidelines-init-variables]
+        int status_of_fscanf;
+            ^
+                             = 0
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/./src/check_output_files.c:55:9: warning: multiple declarations in a single statement reduces readability [readability-isolate-declaration]
+        int correct_code,
+        ^~~~~~~~~~~~~~~~~
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/./src/check_output_files.c:55:13: warning: variable 'correct_code' is not initialized [cppcoreguidelines-init-variables]
+        int correct_code,
+            ^
+note: this fix will not be applied because it overlaps with another fix
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/./src/check_output_files.c:56:13: warning: variable 'test_code' is not initialized [cppcoreguidelines-init-variables]
+            test_code;
+            ^
+note: this fix will not be applied because it overlaps with another fix
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/./src/check_output_files.c:57:9: warning: multiple declarations in a single statement reduces readability [readability-isolate-declaration]
+        double correct_dist = 0.0,
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/./src/check_output_files.c:60:39: warning: use 'fopen' mode 'e' to set O_CLOEXEC [android-cloexec-fopen]
+        FILE * coutp = fopen(argv[i], "r"); // Файл с текущими верными ответами
+                                      ^~~
+                                      "re"
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/./src/check_output_files.c:63:13: warning: the value returned by this function should be used [cert-err33-c]
+            fprintf(routp, "> \"%s\": UNDONE. Problem with opening answer-file. If there is no such file, please ADD IT.\n", argv[i]);
+            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/./src/check_output_files.c:63:13: note: cast the expression to void to silence this warning
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/./src/check_output_files.c:68:9: warning: Value stored to 'status_of_fscanf' is never read [clang-analyzer-deadcode.DeadStores]
+        status_of_fscanf = fscanf(toutp, " %c", &out_symbol);
+        ^                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/./src/check_output_files.c:68:9: note: Value stored to 'status_of_fscanf' is never read
+        status_of_fscanf = fscanf(toutp, " %c", &out_symbol);
+        ^                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/./src/check_output_files.c:68:28: warning: Call to function 'fscanf' is insecure as it does not provide security checks introduced in the C11 standard. Replace with analogous functions that support length arguments or provides boundary checks such as 'fscanf_s' in case of C11 [clang-analyzer-security.insecureAPI.DeprecatedOrUnsafeBufferHandling]
+        status_of_fscanf = fscanf(toutp, " %c", &out_symbol);
+                           ^~~~~~
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/./src/check_output_files.c:68:28: note: Call to function 'fscanf' is insecure as it does not provide security checks introduced in the C11 standard. Replace with analogous functions that support length arguments or provides boundary checks such as 'fscanf_s' in case of C11
+        status_of_fscanf = fscanf(toutp, " %c", &out_symbol);
+                           ^~~~~~
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/./src/check_output_files.c:73:34: warning: statement should be inside braces [google-readability-braces-around-statements,hicpp-braces-around-statements,readability-braces-around-statements]
+            if(out_symbol == 'F')
+                                 ^
+                                  {
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/./src/check_output_files.c:74:17: warning: the value returned by this function should be used [cert-err33-c]
+                fprintf(routp, "> \"%s%02d.txt\": UNDONE. Were problems with opening \"%s%02d.txt\" during doing tests.\n", CASE_PREFIX, i, CASE_PREFIX, i);
+                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/./src/check_output_files.c:74:17: note: cast the expression to void to silence this warning
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/./src/check_output_files.c:78:17: warning: the value returned by this function should be used [cert-err33-c]
+                fprintf(routp, "> \"%s%02d.txt\": UNDONE. Incorrect data in \"%s\".\n", CASE_PREFIX, i, NAME_OF_TEST_OUTPUT_FILE);
+                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/./src/check_output_files.c:78:17: note: cast the expression to void to silence this warning
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/./src/check_output_files.c:79:17: warning: the value returned by this function should be used [cert-err33-c]
+                fprintf(routp, "                         Maybe there is no \"%s/%s%02d.txt\".\n", TEST_CASES_DIR, CASE_PREFIX, i);
+                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/./src/check_output_files.c:79:17: note: cast the expression to void to silence this warning
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/./src/check_output_files.c:82:13: warning: the value returned by this function should be used [cert-err33-c]
+            fclose(coutp);
+            ^~~~~~~~~~~~~
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/./src/check_output_files.c:82:13: note: cast the expression to void to silence this warning
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/./src/check_output_files.c:87:9: warning: Value stored to 'status_of_fscanf' is never read [clang-analyzer-deadcode.DeadStores]
+        status_of_fscanf = fscanf(coutp, " %c", &correct_symbol);
+        ^                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/./src/check_output_files.c:87:9: note: Value stored to 'status_of_fscanf' is never read
+        status_of_fscanf = fscanf(coutp, " %c", &correct_symbol);
+        ^                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/./src/check_output_files.c:87:28: warning: Call to function 'fscanf' is insecure as it does not provide security checks introduced in the C11 standard. Replace with analogous functions that support length arguments or provides boundary checks such as 'fscanf_s' in case of C11 [clang-analyzer-security.insecureAPI.DeprecatedOrUnsafeBufferHandling]
+        status_of_fscanf = fscanf(coutp, " %c", &correct_symbol);
+                           ^~~~~~
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/./src/check_output_files.c:87:28: note: Call to function 'fscanf' is insecure as it does not provide security checks introduced in the C11 standard. Replace with analogous functions that support length arguments or provides boundary checks such as 'fscanf_s' in case of C11
+        status_of_fscanf = fscanf(coutp, " %c", &correct_symbol);
+                           ^~~~~~
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/./src/check_output_files.c:91:13: warning: the value returned by this function should be used [cert-err33-c]
+            fprintf(routp, "> \"%s%02d.txt\": UNDONE. Incorrect data in \"%s\".\n", CASE_PREFIX, i, argv[i]);
+            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/./src/check_output_files.c:91:13: note: cast the expression to void to silence this warning
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/./src/check_output_files.c:93:13: warning: the value returned by this function should be used [cert-err33-c]
+            fclose(coutp);
+            ^~~~~~~~~~~~~
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/./src/check_output_files.c:93:13: note: cast the expression to void to silence this warning
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/./src/check_output_files.c:103:17: warning: the value returned by this function should be used [cert-err33-c]
+                fprintf(routp, "> \"%s%02d.txt\": FAILED. Programm did't catch an error of input data.\n", CASE_PREFIX, i);
+                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/./src/check_output_files.c:103:17: note: cast the expression to void to silence this warning
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/./src/check_output_files.c:104:17: warning: the value returned by this function should be used [cert-err33-c]
+                fscanf(toutp, " %lf", &test_dist);
+                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/./src/check_output_files.c:104:17: note: cast the expression to void to silence this warning
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/./src/check_output_files.c:104:17: warning: 'fscanf' used to convert a string to a floating-point value, but function will not report conversion errors; consider using 'strtod' instead [cert-err34-c]
+                fscanf(toutp, " %lf", &test_dist);
+                ^
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/./src/check_output_files.c:104:17: warning: Call to function 'fscanf' is insecure as it does not provide security checks introduced in the C11 standard. Replace with analogous functions that support length arguments or provides boundary checks such as 'fscanf_s' in case of C11 [clang-analyzer-security.insecureAPI.DeprecatedOrUnsafeBufferHandling]
+                fscanf(toutp, " %lf", &test_dist);
+                ^~~~~~
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/./src/check_output_files.c:104:17: note: Call to function 'fscanf' is insecure as it does not provide security checks introduced in the C11 standard. Replace with analogous functions that support length arguments or provides boundary checks such as 'fscanf_s' in case of C11
+                fscanf(toutp, " %lf", &test_dist);
+                ^~~~~~
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/./src/check_output_files.c:105:42: warning: statement should be inside braces [google-readability-braces-around-statements,hicpp-braces-around-statements,readability-braces-around-statements]
+                if(correct_symbol == 'E')
+                                         ^
+                                          {
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/./src/check_output_files.c:106:21: warning: the value returned by this function should be used [cert-err33-c]
+                    fscanf(coutp, " %d", &correct_code);
+                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/./src/check_output_files.c:106:21: note: cast the expression to void to silence this warning
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/./src/check_output_files.c:106:21: warning: 'fscanf' used to convert a string to an integer value, but function will not report conversion errors; consider using 'strtol' instead [cert-err34-c]
+                    fscanf(coutp, " %d", &correct_code);
+                    ^
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/./src/check_output_files.c:106:21: warning: Call to function 'fscanf' is insecure as it does not provide security checks introduced in the C11 standard. Replace with analogous functions that support length arguments or provides boundary checks such as 'fscanf_s' in case of C11 [clang-analyzer-security.insecureAPI.DeprecatedOrUnsafeBufferHandling]
+                    fscanf(coutp, " %d", &correct_code);
+                    ^~~~~~
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/./src/check_output_files.c:106:21: note: Call to function 'fscanf' is insecure as it does not provide security checks introduced in the C11 standard. Replace with analogous functions that support length arguments or provides boundary checks such as 'fscanf_s' in case of C11
+                    fscanf(coutp, " %d", &correct_code);
+                    ^~~~~~
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/./src/check_output_files.c:110:17: warning: the value returned by this function should be used [cert-err33-c]
+                fprintf(routp, "> \"%s%02d.txt\": FAILED. An error during programm working, while there is no problem in truth.\n", CASE_PREFIX, i);
+                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/./src/check_output_files.c:110:17: note: cast the expression to void to silence this warning
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/./src/check_output_files.c:111:17: warning: the value returned by this function should be used [cert-err33-c]
+                fscanf(coutp, " %lf", &correct_dist);
+                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/./src/check_output_files.c:111:17: note: cast the expression to void to silence this warning
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/./src/check_output_files.c:111:17: warning: 'fscanf' used to convert a string to a floating-point value, but function will not report conversion errors; consider using 'strtod' instead [cert-err34-c]
+                fscanf(coutp, " %lf", &correct_dist);
+                ^
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/./src/check_output_files.c:111:17: warning: Call to function 'fscanf' is insecure as it does not provide security checks introduced in the C11 standard. Replace with analogous functions that support length arguments or provides boundary checks such as 'fscanf_s' in case of C11 [clang-analyzer-security.insecureAPI.DeprecatedOrUnsafeBufferHandling]
+                fscanf(coutp, " %lf", &correct_dist);
+                ^~~~~~
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/./src/check_output_files.c:111:17: note: Call to function 'fscanf' is insecure as it does not provide security checks introduced in the C11 standard. Replace with analogous functions that support length arguments or provides boundary checks such as 'fscanf_s' in case of C11
+                fscanf(coutp, " %lf", &correct_dist);
+                ^~~~~~
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/./src/check_output_files.c:112:38: warning: statement should be inside braces [google-readability-braces-around-statements,hicpp-braces-around-statements,readability-braces-around-statements]
+                if(out_symbol == 'E')
+                                     ^
+                                      {
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/./src/check_output_files.c:113:21: warning: the value returned by this function should be used [cert-err33-c]
+                    fscanf(toutp, " %d", &test_code);
+                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/./src/check_output_files.c:113:21: note: cast the expression to void to silence this warning
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/./src/check_output_files.c:113:21: warning: 'fscanf' used to convert a string to an integer value, but function will not report conversion errors; consider using 'strtol' instead [cert-err34-c]
+                    fscanf(toutp, " %d", &test_code);
+                    ^
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/./src/check_output_files.c:113:21: warning: Call to function 'fscanf' is insecure as it does not provide security checks introduced in the C11 standard. Replace with analogous functions that support length arguments or provides boundary checks such as 'fscanf_s' in case of C11 [clang-analyzer-security.insecureAPI.DeprecatedOrUnsafeBufferHandling]
+                    fscanf(toutp, " %d", &test_code);
+                    ^~~~~~
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/./src/check_output_files.c:113:21: note: Call to function 'fscanf' is insecure as it does not provide security checks introduced in the C11 standard. Replace with analogous functions that support length arguments or provides boundary checks such as 'fscanf_s' in case of C11
+                    fscanf(toutp, " %d", &test_code);
+                    ^~~~~~
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/./src/check_output_files.c:116:13: warning: the value returned by this function should be used [cert-err33-c]
+            fclose(coutp);
+            ^~~~~~~~~~~~~
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/./src/check_output_files.c:116:13: note: cast the expression to void to silence this warning
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/./src/check_output_files.c:124:32: warning: 'fscanf' used to convert a string to a floating-point value, but function will not report conversion errors; consider using 'strtod' instead [cert-err34-c]
+            status_of_fscanf = fscanf(coutp, " %lf", &correct_dist);
+                               ^
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/./src/check_output_files.c:124:32: warning: Call to function 'fscanf' is insecure as it does not provide security checks introduced in the C11 standard. Replace with analogous functions that support length arguments or provides boundary checks such as 'fscanf_s' in case of C11 [clang-analyzer-security.insecureAPI.DeprecatedOrUnsafeBufferHandling]
+            status_of_fscanf = fscanf(coutp, " %lf", &correct_dist);
+                               ^~~~~~
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/./src/check_output_files.c:124:32: note: Call to function 'fscanf' is insecure as it does not provide security checks introduced in the C11 standard. Replace with analogous functions that support length arguments or provides boundary checks such as 'fscanf_s' in case of C11
+            status_of_fscanf = fscanf(coutp, " %lf", &correct_dist);
+                               ^~~~~~
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/./src/check_output_files.c:127:17: warning: the value returned by this function should be used [cert-err33-c]
+                fprintf(routp, "> \"%s%02d.txt\": UNDONE. INCORRECT DATA IN FILE \"%s\". FIX IT.\n", CASE_PREFIX, i, argv[i]);
+                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/./src/check_output_files.c:127:17: note: cast the expression to void to silence this warning
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/./src/check_output_files.c:129:17: warning: the value returned by this function should be used [cert-err33-c]
+                fclose(coutp);
+                ^~~~~~~~~~~~~
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/./src/check_output_files.c:129:17: note: cast the expression to void to silence this warning
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/./src/check_output_files.c:132:32: warning: 'fscanf' used to convert a string to a floating-point value, but function will not report conversion errors; consider using 'strtod' instead [cert-err34-c]
+            status_of_fscanf = fscanf(toutp, " %lf", &test_dist);
+                               ^
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/./src/check_output_files.c:132:32: warning: Call to function 'fscanf' is insecure as it does not provide security checks introduced in the C11 standard. Replace with analogous functions that support length arguments or provides boundary checks such as 'fscanf_s' in case of C11 [clang-analyzer-security.insecureAPI.DeprecatedOrUnsafeBufferHandling]
+            status_of_fscanf = fscanf(toutp, " %lf", &test_dist);
+                               ^~~~~~
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/./src/check_output_files.c:132:32: note: Call to function 'fscanf' is insecure as it does not provide security checks introduced in the C11 standard. Replace with analogous functions that support length arguments or provides boundary checks such as 'fscanf_s' in case of C11
+            status_of_fscanf = fscanf(toutp, " %lf", &test_dist);
+                               ^~~~~~
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/./src/check_output_files.c:135:17: warning: the value returned by this function should be used [cert-err33-c]
+                fprintf(routp, "> \"%s%02d.txt\": UNDONE. INCORRECT DATA IN TESTING OUTPUT FILE \"%s\". FIX IT.\n", CASE_PREFIX, i, NAME_OF_TEST_OUTPUT_FILE);
+                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/./src/check_output_files.c:135:17: note: cast the expression to void to silence this warning
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/./src/check_output_files.c:137:17: warning: the value returned by this function should be used [cert-err33-c]
+                fclose(coutp);
+                ^~~~~~~~~~~~~
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/./src/check_output_files.c:137:17: note: cast the expression to void to silence this warning
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/./src/check_output_files.c:142:69: warning: statement should be inside braces [google-readability-braces-around-statements,hicpp-braces-around-statements,readability-braces-around-statements]
+            if(dabs(test_dist - correct_dist) <= DELTA*correct_dist)
+                                                                    ^
+                                                                     {
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/./src/check_output_files.c:143:17: warning: the value returned by this function should be used [cert-err33-c]
+                fprintf(routp, "> \"%s%02d.txt\": PASSED\n", CASE_PREFIX, i);
+                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/./src/check_output_files.c:143:17: note: cast the expression to void to silence this warning
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/./src/check_output_files.c:144:17: warning: statement should be inside braces [google-readability-braces-around-statements,hicpp-braces-around-statements,readability-braces-around-statements]
+            else
+                ^
+                 {
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/./src/check_output_files.c:145:17: warning: the value returned by this function should be used [cert-err33-c]
+                fprintf(routp, "> \"%s%02d.txt\": FAILED. Programm output is '%lf', while correct is '%lf'\n", CASE_PREFIX, i, test_dist, correct_dist);
+                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/./src/check_output_files.c:145:17: note: cast the expression to void to silence this warning
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/./src/check_output_files.c:147:13: warning: the value returned by this function should be used [cert-err33-c]
+            fclose(coutp);
+            ^~~~~~~~~~~~~
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/./src/check_output_files.c:147:13: note: cast the expression to void to silence this warning
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/./src/check_output_files.c:153:9: warning: do not use 'else' after 'continue' [llvm-else-after-return,readability-else-after-return]
+        else if(out_symbol == 'E')
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/./src/check_output_files.c:156:32: warning: 'fscanf' used to convert a string to an integer value, but function will not report conversion errors; consider using 'strtol' instead [cert-err34-c]
+            status_of_fscanf = fscanf(coutp, " %d", &correct_code);
+                               ^
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/./src/check_output_files.c:156:32: warning: Call to function 'fscanf' is insecure as it does not provide security checks introduced in the C11 standard. Replace with analogous functions that support length arguments or provides boundary checks such as 'fscanf_s' in case of C11 [clang-analyzer-security.insecureAPI.DeprecatedOrUnsafeBufferHandling]
+            status_of_fscanf = fscanf(coutp, " %d", &correct_code);
+                               ^~~~~~
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/./src/check_output_files.c:156:32: note: Call to function 'fscanf' is insecure as it does not provide security checks introduced in the C11 standard. Replace with analogous functions that support length arguments or provides boundary checks such as 'fscanf_s' in case of C11
+            status_of_fscanf = fscanf(coutp, " %d", &correct_code);
+                               ^~~~~~
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/./src/check_output_files.c:159:17: warning: the value returned by this function should be used [cert-err33-c]
+                fprintf(routp, "> \"%s%02d.txt\": UNDONE. INCORRECT DATA IN FILE \"%s\". FIX IT.\n", CASE_PREFIX, i, argv[i]);
+                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/./src/check_output_files.c:159:17: note: cast the expression to void to silence this warning
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/./src/check_output_files.c:161:17: warning: the value returned by this function should be used [cert-err33-c]
+                fclose(coutp);
+                ^~~~~~~~~~~~~
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/./src/check_output_files.c:161:17: note: cast the expression to void to silence this warning
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/./src/check_output_files.c:164:32: warning: 'fscanf' used to convert a string to an integer value, but function will not report conversion errors; consider using 'strtol' instead [cert-err34-c]
+            status_of_fscanf = fscanf(toutp, " %02d", &test_code);
+                               ^
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/./src/check_output_files.c:164:32: warning: Call to function 'fscanf' is insecure as it does not provide security checks introduced in the C11 standard. Replace with analogous functions that support length arguments or provides boundary checks such as 'fscanf_s' in case of C11 [clang-analyzer-security.insecureAPI.DeprecatedOrUnsafeBufferHandling]
+            status_of_fscanf = fscanf(toutp, " %02d", &test_code);
+                               ^~~~~~
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/./src/check_output_files.c:164:32: note: Call to function 'fscanf' is insecure as it does not provide security checks introduced in the C11 standard. Replace with analogous functions that support length arguments or provides boundary checks such as 'fscanf_s' in case of C11
+            status_of_fscanf = fscanf(toutp, " %02d", &test_code);
+                               ^~~~~~
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/./src/check_output_files.c:167:17: warning: the value returned by this function should be used [cert-err33-c]
+                fprintf(routp, "> \"%s%02d.txt\": UNDONE. INCORRECT DATA IN TESTING OUTPUT FILE \"%s\". FIX IT.\n", CASE_PREFIX, i, NAME_OF_TEST_OUTPUT_FILE);
+                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/./src/check_output_files.c:167:17: note: cast the expression to void to silence this warning
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/./src/check_output_files.c:169:17: warning: the value returned by this function should be used [cert-err33-c]
+                fclose(coutp);
+                ^~~~~~~~~~~~~
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/./src/check_output_files.c:169:17: note: cast the expression to void to silence this warning
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/./src/check_output_files.c:174:42: warning: statement should be inside braces [google-readability-braces-around-statements,hicpp-braces-around-statements,readability-braces-around-statements]
+            if(correct_code == test_code)
+                                         ^
+note: this fix will not be applied because it overlaps with another fix
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/./src/check_output_files.c:175:17: warning: the value returned by this function should be used [cert-err33-c]
+                fprintf(routp, "> \"%s%02d.txt\": PASSED\n", CASE_PREFIX, i);
+                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/./src/check_output_files.c:175:17: note: cast the expression to void to silence this warning
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/./src/check_output_files.c:176:17: warning: statement should be inside braces [google-readability-braces-around-statements,hicpp-braces-around-statements,readability-braces-around-statements]
+            else
+                ^
+note: this fix will not be applied because it overlaps with another fix
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/./src/check_output_files.c:177:17: warning: the value returned by this function should be used [cert-err33-c]
+                fprintf(routp, "> \"%s%02d.txt\": FAILED. Programm error code is '%d', while correct is '%d'\n", CASE_PREFIX, i, test_code, correct_code);
+                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/./src/check_output_files.c:177:17: note: cast the expression to void to silence this warning
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/./src/check_output_files.c:179:13: warning: the value returned by this function should be used [cert-err33-c]
+            fclose(coutp);
+            ^~~~~~~~~~~~~
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/./src/check_output_files.c:179:13: note: cast the expression to void to silence this warning
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/./src/check_output_files.c:183:9: warning: the value returned by this function should be used [cert-err33-c]
+        fclose(coutp);
+        ^~~~~~~~~~~~~
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/./src/check_output_files.c:183:9: note: cast the expression to void to silence this warning
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/./src/check_output_files.c:186:5: warning: the value returned by this function should be used [cert-err33-c]
+    fclose(toutp);
+    ^~~~~~~~~~~~~
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/./src/check_output_files.c:186:5: note: cast the expression to void to silence this warning
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/./src/check_output_files.c:187:5: warning: the value returned by this function should be used [cert-err33-c]
+    fclose(routp);
+    ^~~~~~~~~~~~~
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/./src/check_output_files.c:187:5: note: cast the expression to void to silence this warning
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/./src/fill_in_testing_output.c:1:1: warning: #includes are not sorted properly [llvm-include-order]
+#include <stdlib.h>
+^
+note: this fix will not be applied because it overlaps with another fix
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/./src/fill_in_testing_output.c:1:1: warning: system include stdlib.h not allowed [llvmlibc-restrict-system-libc-headers]
+#include <stdlib.h>
+^~~~~~~~~~~~~~~~~~~
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/./src/fill_in_testing_output.c:2:1: warning: system include stdio.h not allowed [llvmlibc-restrict-system-libc-headers]
+#include <stdio.h>
+^~~~~~~~~~~~~~~~~~
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/./src/fill_in_testing_output.c:11:5: warning: multiple declarations in a single statement reduces readability [readability-isolate-declaration]
+    FILE *inp = NULL, // Входной файл
+    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/./src/fill_in_testing_output.c:13:20: warning: variable 'err' is not initialized [cppcoreguidelines-init-variables]
+    reading_code_t err; // Статус прочтения из файла геометрического объекта
+                   ^
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/./src/fill_in_testing_output.c:16:44: warning: use 'fopen' mode 'e' to set O_CLOEXEC [android-cloexec-fopen]
+    outp = fopen(NAME_OF_TEST_OUTPUT_FILE, "w");
+                                           ^~~
+                                           "we"
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/./src/fill_in_testing_output.c:25:9: warning: the value returned by this function should be used [cert-err33-c]
+        fprintf(outp, "F Testing function did't get any argument (name of input file).\n");
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/./src/fill_in_testing_output.c:25:9: note: cast the expression to void to silence this warning
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/./src/fill_in_testing_output.c:27:9: warning: the value returned by this function should be used [cert-err33-c]
+        fclose(outp);
+        ^~~~~~~~~~~~
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/./src/fill_in_testing_output.c:27:9: note: cast the expression to void to silence this warning
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/./src/fill_in_testing_output.c:31:5: warning: kernel performance could be improved by unrolling this loop with a '#pragma unroll' directive [altera-unroll-loops]
+    for(int i = 1; i < argc; ++i)
+    ^
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/./src/fill_in_testing_output.c:34:30: warning: use 'fopen' mode 'e' to set O_CLOEXEC [android-cloexec-fopen]
+        inp = fopen(argv[i], "r");
+                             ^~~
+                             "re"
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/./src/fill_in_testing_output.c:37:13: warning: the value returned by this function should be used [cert-err33-c]
+            fprintf(outp, "F \"%s\": problems with opening this file.\n", argv[i]);
+            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/./src/fill_in_testing_output.c:37:13: note: cast the expression to void to silence this warning
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/./src/fill_in_testing_output.c:45:39: warning: statement should be inside braces [google-readability-braces-around-statements,hicpp-braces-around-statements,readability-braces-around-statements]
+        if(err == rc_SUCCESFULLY_READ)
+                                      ^
+                                       {
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/./src/fill_in_testing_output.c:46:13: warning: the value returned by this function should be used [cert-err33-c]
+            fprintf(outp, "S %.8lf\n", distance);
+            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/./src/fill_in_testing_output.c:46:13: note: cast the expression to void to silence this warning
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/./src/fill_in_testing_output.c:47:13: warning: statement should be inside braces [google-readability-braces-around-statements,hicpp-braces-around-statements,readability-braces-around-statements]
+        else
+            ^
+             {
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/./src/fill_in_testing_output.c:48:13: warning: the value returned by this function should be used [cert-err33-c]
+            fprintf(outp, "E %d\n", err);
+            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/./src/fill_in_testing_output.c:48:13: note: cast the expression to void to silence this warning
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/./src/fill_in_testing_output.c:50:9: warning: the value returned by this function should be used [cert-err33-c]
+        fclose(inp);
+        ^~~~~~~~~~~
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/./src/fill_in_testing_output.c:50:9: note: cast the expression to void to silence this warning
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/./src/fill_in_testing_output.c:53:5: warning: the value returned by this function should be used [cert-err33-c]
+    fclose(outp);
+    ^~~~~~~~~~~~
+/home/leonid/programming/c_language/distance_between_polygons/auto_tests/./src/fill_in_testing_output.c:53:5: note: cast the expression to void to silence this warning

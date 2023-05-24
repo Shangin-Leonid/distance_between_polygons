@@ -1,0 +1,37 @@
+
+	Here you can see results of testing the programm:
+
+> "case_01.txt": PASSED
+> "case_02.txt": PASSED
+> "case_03.txt": PASSED
+> "case_04.txt": PASSED
+> "case_05.txt": PASSED
+> "case_06.txt": PASSED
+> "case_07.txt": PASSED
+> "case_08.txt": PASSED
+> "case_09.txt": PASSED
+> "case_10.txt": PASSED
+> "case_11.txt": PASSED
+> "case_12.txt": PASSED
+> "case_13.txt": PASSED
+> "case_14.txt": PASSED
+> "case_15.txt": PASSED
+> "case_16.txt": PASSED
+> "case_17.txt": PASSED
+> "case_18.txt": PASSED
+> "case_19.txt": PASSED
+> "case_20.txt": PASSED
+> "case_21.txt": PASSED
+> "case_22.txt": PASSED
+> "case_23.txt": PASSED
+> "case_24.txt": PASSED
+> "case_25.txt": PASSED
+> "case_26.txt": PASSED
+> "case_27.txt": PASSED
+> "case_28.txt": PASSED
+> "case_29.txt": PASSED
+> "case_30.txt": PASSED
+> "case_31.txt": PASSED
+> "case_32.txt": PASSED
+> "case_33.txt": PASSED
+> "case_34.txt": PASSED
