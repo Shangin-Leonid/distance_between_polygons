@@ -1,5 +1,5 @@
-#ifndef OBJECTS_H /* Страж подключения Objects.h */
-#define OBJECTS_H
+#ifndef GEOM_OBJECTS_H
+#define GEOM_OBJECTS_H
 
 
 #include <stddef.h> // Для size_t
@@ -32,4 +32,4 @@ typedef struct
 } polygon_t;
 
 
-#endif /* OBJECTS_H */
+#endif /* GEOM_OBJECTS_H */

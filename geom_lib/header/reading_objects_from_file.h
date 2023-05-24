@@ -1,4 +1,4 @@
-#ifndef READING_OBJECTS_FROM_FILE_H /* Страж подключения Reading_objects_from_file.h */
+#ifndef READING_OBJECTS_FROM_FILE_H
 #define READING_OBJECTS_FROM_FILE_H
 
 

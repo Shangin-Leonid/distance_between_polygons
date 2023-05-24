@@ -1,4 +1,4 @@
-#ifndef ALGOS_H /* Страж подключения Algos.h */
+#ifndef ALGOS_H
 #define ALGOS_H
 
 
