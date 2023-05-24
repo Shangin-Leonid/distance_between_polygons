@@ -1,0 +1,38 @@
+ ______________________________________________________________________________
+|                      REFERENCE FOR AUTO_TESTS MAKEFILE                       |
+|------------------------------------------------------------------------------|
+|                      DISCRIPTIONS OF EACH TARGET:                            |
+|------------------------------------------------------------------------------|
+|                                                                              |
+|   You can write 'make' + ' ' + any of the following commands:                |
+|                                                                              |
+| ~ help              - show this reference file                               |
+| ~ build             - build the auto test module                             |
+| ~ do_test           - run tests. More info in "./AUTO_TESTS/README.md"       |
+| ~ print-NAME        - print the value of the variable called NAME            |
+|                                                                              |
+|   Clean commands. Add "OUTPUT_FILE=..." (without quotes, after command) to   |
+|   set an output file name (if it is not default = "output.txt").             |
+|                                                                              |
+| ~ clean             - clean test directory (all auxilary files)              |
+| ~ clean_all         - clean test directory fully (roll back to origin state) |
+| ~ clean_test_report - delete test output, results and reports                |
+| ~ total_clean       - clean all project fully (roll back to origin state),   |
+|                       excluding report files.                                |
+|                                                                              |
+|   Analyzes. ADD "REDIRECT=YES" (without quotes, after command) to redirect   |
+|   analysis results to the file.                                              |
+|                                                                              |
+| ~ cppcheck_a        - static analysis by 'cppcheck'                          |
+| ~ cpplint_a         - static analysis by 'cpplint'                           |
+| ~ valgrind_a        - memory leak, runtime analysis by 'valgrind'            |
+| ~ clang_tidy_a      - by 'clang-tidy'                                        |
+|                                                                              |
+| ~ coverage_a        - test coverage by 'gcc --coverage', 'gcov', 'lcov'      |
+| ~ clean_coverage    - clean everything that was created by 'coverage_a'      |
+|                                                                              |
+| There are few other targets, which are used like supporting.                 |
+|                                                                              |
+| All makefiles have been written for Linux. Sorry, if you have another OS :-( |
+| I wish you could understand my make-code and then rewrite some parts.        |
+|______________________________________________________________________________]
