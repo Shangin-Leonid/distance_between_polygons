@@ -117,7 +117,7 @@
   :file_folder: &nbsp Structure:
 </h3>
 
-  <a href="https://github.com/Shangin-Leonid/distance_between_polygons/tree/master/geom_lib"><em> ./ </em></a> -  main part; <br>
+  <a href="https://github.com/Shangin-Leonid/distance_between_polygons/tree/master"><em> ./ </em></a> -  main part; <br>
   <a href="https://github.com/Shangin-Leonid/distance_between_polygons/tree/master/auto_tests"><em> auto_tests </em></a>  - tests; <br>
   <a href="https://github.com/Shangin-Leonid/distance_between_polygons/tree/master/geom_lib"><em> geom_lib </em></a> - reading (parsing) utils and geometric algos; <br>
   Each (sub-)directory has its own ***makefile***  with ***make_reference.txt*** and subdirectories: ***header*** and ***src***. <br>
